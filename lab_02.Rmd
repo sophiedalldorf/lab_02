@@ -42,6 +42,10 @@ you run a simulation on a high performance computer. Organize the contents in
 Create a date-time object based on the atomic double vector below. You'll
 need to set the class attribute to `"POSIXct"`
 
+attr(z, which = "class") <- "POSIXct"
+
+z <- as.POSIXct(z)
+
 ```{r}
 z <- seq(0, 3600 * 10, by = 3600)
 ```
